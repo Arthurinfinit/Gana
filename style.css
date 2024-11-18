@@ -506,6 +506,9 @@ img {
 }
 
 @media (max-width: 768px) {
+  .conteudo-caixa-esporte img{
+    width: 80%;
+  }
   .titulo img {
     width: 100%;
   }
