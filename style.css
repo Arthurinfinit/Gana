@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --fundo:#0A0A0C;
+    --fonte-titulo: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    --fonte-texto: url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+} 
+
+body {
+  background-color: var(--fundo);
+  width: 100%;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  padding: 20px 20px; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+  justify-content: center;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+/*parte do titulo*/
+img {
+  align-items: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.titulo {
+  position: relative;
+  width: 100vw; /* Largura total da viewport */
+  overflow: hidden;
+}
+
+.titulo img {
+  width: 100vw; /* Adapta a largura da imagem ao tamanho da tela */
+  height: auto; /* Mantém a proporção da imagem */
+  object-fit: cover;
+  max-width: 1720px;
+}
+
+
+
+.texto-imagem {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  color: #ffffff;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.texto-imagem h1 {
+  white-space: nowrap;
+  font-size: 80px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.texto-imagem h2{
+  font-family: "", serif;
+  font-size: 60px;
+  margin: 0px;
+}
+
+/*parte de história*/
+
+.historia{
+  color: #ffffff;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.historia h2{
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+.historia h3{
+  font-size: 25px;
+  font-style: italic;
+  margin-bottom: 0px;
+  font-family: '';
+}
+
+.botoes1 {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px; /* Espaço entre os botões */
+  margin-top: 20px;
+}
+
+.botoes1 .botao {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  width: 250px;
+}
+
+.botoes1 .botao img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.botoes1 .botao h2 {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 40px;
+  font-family: '';
+  margin: 0;
+}
+
+.botoes1 .botao {
+  position: relative;
+  padding: 0; /* Remover o padding do contêiner */
+  cursor: pointer;
+}
+
+/*parte organização*/
+
+.organizacao{
+  color: #ffffff;
+  font-family:Arial, Helvetica, sans-serif;
+  font-style:normal;
+  margin-bottom: 30px;
+  max-width: 100%;
+}
+
+.organizacao h2{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.organizacao h3{
+  font-family:"";
+  margin: 0px;
+  margin-top: 10px;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.botoes2 {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente, se necessário */
+  gap: 30px; /* Espaço entre os botões */
+  margin-top: 20px;
+  width: 100%; /* Certifica-se de que ocupa toda a largura */
+  max-width: 90%; /* Controla a largura máxima */
+  margin-left: auto; /* Centraliza o container dentro do seu elemento pai */
+  margin-right: auto; /* Centraliza o container dentro do seu elemento pai */
+}
+
+.botoes2 .botao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  text-align: center; /* Garante que o conteúdo do botão também fica centralizado */
+}
+
+.botoes2 .botao img {
+  width: 360px;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto; /* Garante que a imagem esteja centralizada dentro do botão */
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.botoes2 .botao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  padding: 10px;
+  border: none;
+  background: transparent;
+}
+
+
+.botoes2 .botao img {
+  width: 360px;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.botoes2 .botao h2{
+  color: #ffffff;
+  font-family: "";
+  font-size: 30px;
+  margin: 10px;
+}
+
+.botoes2 .botao p{
+  color: #ffffff;
+  font-family: "";
+  font-size: 20px;
+  margin: 10px;
+}
+
+.historia-gana {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.historia-gana h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.historia-gana h2 {
+  font-size: 28px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.historia-gana p {
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.historia-gana ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.historia-gana ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+
+/*parte bandeira*/
+
+.bandeira {
+  width: 80%;
+  margin: 20px auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('./image/bandeira.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content:baseline;
+  border: 2px solid #ffffff; 
+  border-radius: 20px;
+}
+
+.bandeira h1{
+  font-size: 40px;
+  margin: 0px;
+  margin-top: 20px;
+}
+
+.bandeira p{
+  font-size: 25px;
+  font-family: '';
+  margin: 20px ;
+  text-align:justify;
+  font-weight: 300;
+}
+
+/*parte vestimenta*/
+.vestimenta {
+  margin: 20px; /* Espaço ao redor da seção */
+}
+
+.vestimenta h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.vestimenta strong{
+  color: #ffcc00;
+}
+.textoeimagem {
+  display: flex; /* Alinha a imagem e o texto lado a lado */
+  gap: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.vestimenta .imagem {
+  width: 40%; /* A largura da imagem será 40% do contêiner */
+  border-radius: 10px; /* Bordas arredondadas */
+  object-fit: cover; /* Ajusta a imagem ao espaço definido sem distorção */
+  flex-shrink: 0; /* Garante que a imagem não diminua com o texto */
+}
+
+.texto-container {
+  flex: 1; /* O texto ocupa o restante do espaço */
+  max-height: 400px; /* Limita a altura do contêiner de texto */
+  overflow-y: auto; /* Adiciona barra de rolagem se o texto exceder o limite */
+  padding-right: 10px; /* Evita que o texto encoste na barra de rolagem */
+}
+
+.vestimenta .texto-vestimenta {
+  font-size: 18px; /* Tamanho do texto */
+  line-height: 1.6; /* Espaçamento entre as linhas */
+  text-align: left; /* Texto alinhado nos dois lados */
+  margin: 0; /* Remove margens extras */
+}
+
+
+
+/*parte evolucao*/
+
+.evolucao h1{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.evolucao p {
+  font-size: 25px;
+  font-family: '';
+  line-height: 1.5;
+}
+
+.evolucao .evolu_imagem {
+  width: 35%; /* A largura da imagem será 40% do contêiner */
+  height: auto;
+  border-radius: 10px; /* Bordas arredondadas */
+  object-fit: cover; /* Ajusta a imagem ao espaço definido sem distorção */
+  flex-shrink: 0; /* Garante que a imagem não diminua com o texto */
+}
+
+.evolucao .evolu_texto {
+  width: 55%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  max-height: 400px; /* Limita a altura do contêiner de texto */
+  overflow-y: auto; /* Adiciona barra de rolagem se o texto exceder o limite */
+  font-size: 18px; /* Tamanho do texto */
+  line-height: 1.6; /* Espaçamento entre as linhas */
+  text-align: left; /* Texto alinhado nos dois lados */
+  margin: 0; /* Remove margens extras */
+}
+
+.coisasevolu {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 20px 0;
+}
+/*parte final*/
+.final img {
+  width: 100vw; /* Adapta a largura da imagem ao tamanho da tela */
+  height: auto; /* Mantém a proporção da imagem */
+  max-height: 100vh; /* Impede que a imagem ultrapasse a altura da tela */
+  object-fit: cover;
+  max-width: 1720px;
+}
+
+/*parte em conjunto*/
+.bandeira, .vestimenta, .evolucao{
+  width: 80%; /* Define a largura consistente para ambas as seções */
+}
+
+/* Caixa modal principal */
+.caixa-texto {
+  display: none; /* Oculta por padrão */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Ocupa 80% da largura da viewport */
+  height: 80%; /* Ocupa 80% da altura da viewport */
+  background-color: rgba(0, 0, 0, 0.9); /* Fundo semi-transparente */
+  color: #ffffff; /* Cor do texto */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Sombra suave */
+  z-index: 1000; /* Garante que fique acima de outros elementos */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  overflow-y: auto; /* Habilita rolagem vertical para textos longos */
+}
+
+/* Botão de voltar */
+.botao-voltar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.botao-voltar:hover {
+  color: #f0f0f0;
+  transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Conteúdo da caixa */
+.conteudo-caixa {
+  margin-top: 40px; /* Espaço abaixo do botão voltar */
+  text-align: justify;
+}
+
+.conteudo-caixa h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.conteudo-caixa p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+
+/*caixa*/
+
+/* Caixa modal básica */
+.caixa-texto {
+  display: none; /* Inicialmente oculta */
+  position: fixed; /* Fixa na tela, não rola com o conteúdo */
+  align-items: flex-start; /* Alinha os itens no topo */
+  top: 50%; /* Centralizado verticalmente */
+  left: 50%; /* Centralizado horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta a centralização */
+  width: 80%; /* 80% da largura da viewport */
+  height: auto; /* 80% da altura da viewport */
+  max-height: 80vh;
+  background: rgba(0, 0, 0, 0.9); /* Fundo semitransparente */
+  z-index: 1000; /* Sobrepõe outros elementos */
+  padding: 20px;
+  border-radius: 10px; /* Bordas arredondadas */
+  overflow-y: auto; /* Permite rolagem caso o conteúdo ultrapasse */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+}
+
+/* Quando ativo, a caixa se torna visível */
+.caixa-texto.ativo {
+  display: block;
+}
+
+/* Botão de voltar */
+.botao-voltar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1010; /* Sobrepõe o conteúdo da modal */
+}
+
+/* Estilo do texto dentro da caixa */
+.conteudo-caixa-politica h2, .conteudo-caixa-historia h2, .conteudo-caixa-religiao h2, .conteudo-caixa-esporte h2, .conteudo-caixa-comida h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #ffcc00; /* Um destaque de cor diferente para o título */
+}
+
+.conteudo-caixa-politica p, .conteudo-caixa-historia p, .conteudo-caixa-religiao p, .conteudo-caixa-esporte p, .conteudo-caixa-comida p{
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.conteudo-caixa-esporte img{
+  width: 400px; /* Define a largura da imagem */
+  border-radius: 5px; /* Cantos arredondados */
+  object-fit: cover; /* Garante que a imagem mantenha proporções */
+  flex-shrink: 0; /* Evita que a imagem encolha se o texto for muito grande */
+}
+
+@media (max-width: 768px) {
+  .titulo img {
+    width: 100%;
+  }
+
+  .botoes1{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .botoes1 .botao{
+    width: 200px;
+  }
+  
+  .botoes2 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .titulo h1 {
+    font-size: 60px;
+  }
+
+  .titulo h2 {
+    font-size: 40px;
+  }
+
+  .organizacao .botoes2 .botao{
+    width: 400px;
+  }
+
+  .bandeira {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .evolucao .coisasevolu p {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .titulo .texto-imagem{
+    max-width: 80%;
+  }
+
+  .titulo .texto-imagem h1{
+    font-size: 36px;
+    max-width: 80%;
+  }
+  .organizacao .botoes2 .botao{
+    max-width: 90%;
+  }
+
+  .historia .botoes1 .botao{
+    width: 90%;
+  }
+
+  .historia .botoes1 .botao h2{
+    font-size: 20px;
+  }
+
+  .historia .botoes1 .botao .rel{
+    background-color: #0A0A0C;
+  }
+}
+
+@media (max-width: 360px) {
+  .organizacao .botoes2 {
+    align-self: center;
+  }
+  .organizacao .botoes2 .botao{
+    max-width: 80%;
+    text-align: center;
+  }
+}
