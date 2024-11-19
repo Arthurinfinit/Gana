@@ -372,6 +372,80 @@ img {
   gap: 20px;
   margin: 20px 0;
 }
+
+.sustentabilidade {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente, se necessário */
+  gap: 30px; /* Espaço entre os botões */
+  margin-top: 60px;
+  width: 100%; /* Certifica-se de que ocupa toda a largura */
+  max-width: 90%; /* Controla a largura máxima */
+  margin-left: auto; /* Centraliza o container dentro do seu elemento pai */
+  margin-right: auto; /* Centraliza o container dentro do seu elemento pai */
+}
+
+.sustentabilidade .botao {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  text-align: center; /* Garante que o conteúdo do botão também fica centralizado */
+}
+
+.sustentabilidade .botao img {
+  width: 1000px;
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Garante que a imagem esteja centralizada dentro do botão */
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.sustentabilidade .botao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  padding: 10px;
+  border: none;
+  background: transparent;
+}
+
+.sustentabilidade .botao h2{
+  color: #ffffff;
+  font-family: "";
+  font-size: 50px;
+  margin: 10px;
+}
+
+.sustentabilidade .botao p{
+  color: #ffffff;
+  font-family: "";
+  font-size: 30px;
+  margin: 10px;
+}
+
+.conteudo-caixa-sustentabilidade h1{
+  color: #15ff00;
+  font-size: 40px;
+}
+
+.conteudo-caixa-sustentabilidade h2{
+  color: #ffcc00;
+  font-size: 25px;
+}
+
+.conteudo-caixa-sustentabilidade p{
+  color: #ffffff;
+  font-size: 16px;
+  text-align: justify;
+}
+
 /*parte final*/
 .final img {
   width: 100vw; /* Adapta a largura da imagem ao tamanho da tela */
@@ -509,7 +583,6 @@ img {
   .conteudo-caixa-esporte img{
     max-width: 80%;
   }
-
   .titulo img {
     width: 100%;
   }
@@ -573,6 +646,26 @@ img {
   .historia .botoes1 .botao .rel{
     background-color: #0A0A0C;
   }
+
+  .conteudo-caixa-sustentabilidade h1{
+    color: #15ff00;
+    font-size: 25px;
+  }
+  .conteudo-caixa-sustentabilidade h2{
+    color: #ffcc00;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .sustentabilidade .botao h2{
+    font-size: 40px;
+  }
+
+  .sustentabilidade .botao p{
+    font-size: 25px;
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 360px) {
@@ -582,5 +675,14 @@ img {
   .organizacao .botoes2 .botao{
     max-width: 80%;
     text-align: center;
+  }
+
+  .sustentabilidade .botao h2{
+    font-size: 30px;
+  }
+
+  .sustentabilidade .botao p{
+    font-size: 18px;
+    margin-top: 0;
   }
 }
